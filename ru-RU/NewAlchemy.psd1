@@ -1,0 +1,65 @@
+#culture="ru-RU"
+ConvertFrom-StringData @'
+	#main form Text
+	BoutonAjouterContent=Добавить
+	BoutonEditionContent=Изменить
+	BoutonDefaultContent=По умолчанию
+	Defaultmsgbox=Это действие вернёт список игр и настройки к значениям по умолчанию. 
+	Defaultmsgbox2=Резервная копия этой информации будет сохранена в: 
+	Defaultmsgbox3=Вы уверены, что хотите продолжить?
+	Text_main=NewALchemy восстанавливает аппаратное ускорение звука, позволяя наслаждаться эффектами EAX и 3D-звуком в играх с Directsound 3D в Microsoft Windows Vista и выше.
+	Text_jeuInstall=Установленные игры
+	Text_JeuTransmut=Игры с поддержкой NewAlchemy
+	#Edit / add Form Text
+	MainTitle2=Настройки игры
+	C_registreContent=Использовать путь реестра
+	C_GamepathContent=Использовать путь к игре
+	T_registreToolTip=путь в реестре, содержащий строку до исполняемого файла или его каталога (используйте этот вариант, если доступен; альтернатива — GamePath)
+	T_GamepathToolTip=Каталог для поиска приложения (если RegPath использовать нельзя)
+	T_BuffersContent=Буферы
+	T_BuffersToolTip=используется для задания количества аудиобуферов, используемых внутренне. Значение по умолчанию — 4, подходит для большинства приложений. (значения от 2 до 10).
+	T_DurationContent = Длительность
+	T_DurationToolTip=используется для задания длины в миллисекундах каждого аудиобуфера. значение по умолчанию — 25 мс. (значения: от 5 до 50)
+	T_VoiceContent=Максимальное количество голосов 
+	T_voiceToolTip=используется для задания максимального количества аппаратных голосов, используемых ALchemy (по умолчанию 128), значения: от 32 до 128
+	L_Settings=Настройки
+	B_OkContent=ОК
+	B_CancelContent=Отмена
+	L_GameTitleContent=Название игры
+	T_SubdirToolTip=смещение подкаталога относительно пути, указанного в RegPath или Gamepath, для поддержки библиотек
+	C_DisableDirectMusicContent=Отключить Direct Music 
+	C_DisableDirectMusicToolTip=используется для отключения поддержки DirectMusic. По умолчанию — false (0 или 1 в dsound.ini).
+	C_DisableNativeAlContent=Отключить нативные драйверы OpenAL 
+	C_DisableNativeAlToolTip=Только для карт X-Fi и Audigy: отключает использование аппаратного драйвера OpenAL (CT_oal.dll) в ALchemy; вместо него будет использоваться программная 3D-библиотека Creative.
+	C_SubDirContent=Установить в подпапку
+	C_RootdirContent=Установить как в корневую папку, так и в подпапку
+	L_Debug1Content=---------------------------------------------------ОТЛАДКА---------------------------------------------------
+	L_Debug2Content=Включение настроек журналирования может существенно повлиять на производительность.
+	C_LogDirectSoundContent=Журналировать Directsound
+	C_LogDirectSound2DContent=Журналировать Directsound 2D
+	C_LogDirectSound2DStreamingContent=Журналировать потоковое воспроизведение Directsound 2D
+	C_LogDirectSound3DContent=Журналировать Directsound 3D
+	C_LogDirectSoundListenerContent=Журналировать DirectSound Listener
+	C_LogDirectSoundEAXContent=Журналировать EAX
+	C_LogDirectSoundTimingInfoContent=Журналировать информацию о таймингах Directsound
+	C_LogStarvationContent=Журналировать нехватку буферов (starvation)
+	C_logtextTooltip=Журнал будет сохранён в файл dsound.log игры, требуются нативные драйверы OpenAL (CT.oal.dll)
+	FolderChoice=Выберите папку
+	SubFolderChoice=Выберите подпапку
+	# Error message
+	Badlocation=Для NewAlchemy требуется установленный Creative Alchemy.
+	MissFile=В папке установки отсутствует файл Creative Alchemy.
+	RegKeyInc=Некорректное значение ключа реестра
+	RegKeyValInc=Значение ключа реестра не возвращает путь
+	RegKeyBad=Недопустимый ключ реестра
+	RegKeyEmpty=Ключ реестра пуст
+	PathEmpty=Пустой путь
+	BadPath=Недопустимый путь
+	BadPathOrSub=Путь не существует или не является подпапкой.
+	SubNotFound=Подпапка не найдена
+	BuffersErr=Значение Buffers должно быть от 2 до 10!
+	DurationErr=Значение Duration должно быть от 5 до 50!
+	VoiceErr=Максимальное количество голосов должно быть от 32 до 128!
+	TitleExist=Такое название игры уже существует
+	TitleMiss=Название игры обязательно
+'@
